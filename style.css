@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -9,9 +11,15 @@
   --Red: hsl(4, 100%, 49%);
   --White: hsl(0, 0%, 100%);
 }
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 html {
   font-size: 100%;
+}
+body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
 }
 
 img,
@@ -33,15 +41,148 @@ i {
   display: block;
   font-size: 1.5rem;
 }
-main{
-    width: min(100%, 1440px);
+main {
+  width: min(100%, 1600px);
+  margin-inline: auto;
 }
-header{
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
+header {
+  height: 10vh;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 98%;
+  margin-inline: auto;
 }
-.logo{
-    width: 10%;
+.logo {
+  width: 10%;
 }
-input
+.form-cont {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid hsl(0, 0%, 71%);
+  border-radius: 30px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  border: none;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.fa-magnifying-glass {
+  color: hsl(0, 0%, 71%);
+  font-size: 1rem;
+}
+.header-links {
+  margin-left: 3rem;
+  text-align: center;
+}
+.header-links a {
+  margin-top: -10px;
+  color: black;
+  padding-left: 2rem;
+}
+.fa-bell {
+  margin-left: 2rem;
+  width: 1rem;
+  color: hsl(77, 100%, 29%);
+  margin-top: 7px;
+}
+.header-btn {
+  padding: 0.6rem 1rem;
+  margin-left: 3rem;
+  background-color: hsl(77, 100%, 29%);
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 7px;
+}
+footer {
+  margin-top: 20rem;
+}
+.footer-content-1 {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.marketplace,
+.account,
+.resources,
+.company {
+  align-self: flex-start;
+}
+.footer-img {
+  width: 13%;
+}
+.links a {
+  display: block;
+  color: black;
+}
+h3 {
+  color: hsl(79, 94%, 20%);
+}
+input[type="email"] {
+  border: none;
+}
+.updates {
+  width: 25%;
+}
+.updates h4 {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.update-form {
+  border: 1px solid hsl(0, 0%, 71%);
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+}
+.update-form ::placeholder{
+  padding-left: 1rem;
+}
+.updates button {
+  width: 40%;
+  font-size: 1rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: hsl(77, 100%, 29%);
+  color: white;
+}
+.footer-content-2 {
+  margin-top: 4rem;
+  background-color: hsl(79, 94%, 20%);
+  display: flex;
+  justify-content: space-between;
+}
+.copyright,
+.terms {
+  color: white;
+  padding: 2rem 3rem;
+}
+.terms {
+  display: flex;
+}
+.terms a {
+  color: white;
+  padding-left: 1rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.social-icons .fa-brands {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  color: hsl(77, 100%, 29%);
+}

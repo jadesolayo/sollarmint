@@ -51,7 +51,6 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  width: 98%;
   margin-inline: auto;
 }
 .logo {
@@ -69,7 +68,6 @@ header {
 }
 input[type="text"],
 input[type="email"] {
-  width: 100%;
   border: none;
 }
 ::placeholder {
@@ -80,23 +78,24 @@ input[type="email"] {
   font-size: 1rem;
 }
 .header-links {
-  margin-left: 3rem;
+  margin-left: 1rem;
   text-align: center;
 }
 .header-links a {
   margin-top: -10px;
   color: black;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .fa-bell {
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   width: 1rem;
   color: hsl(77, 100%, 29%);
   margin-top: 7px;
 }
 .header-btn {
   padding: 0.6rem 1rem;
-  margin-left: 3rem;
+  padding-left: 1rem;
   background-color: hsl(77, 100%, 29%);
   color: white;
   font-size: 1rem;

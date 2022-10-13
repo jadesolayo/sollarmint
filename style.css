@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -15,6 +15,9 @@ html {
   font-size: 100%;
 }
 body {
+  width: min(100%, 1600px);
+  margin-inline: auto;
+
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
@@ -42,13 +45,51 @@ i {
   font-size: 1.5rem;
 }
 main {
-  width: min(100%, 1600px);
   margin-inline: auto;
+}
+.landing-page {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(107, 148, 0, 0.96) 0%,
+      rgba(107, 148, 0, 0.35) 155.89%
+    ),
+    url("/images/SL-092920-35840-02\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.landing-page-content {
+  height: 90vh;
+  display: flex;
+  padding: 4rem;
+}
+.landing-page-copy {
+  align-self: center;
+  width: 42%;
+}
+.landing-page-copy h4 {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+.landing-page-copy h1 {
+  font-family: "Play", sans-serif;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.landing-page-copy p {
+  padding-bottom: 3rem;
+}
+.btn-cont button{
+  border: none;
+  padding: 1rem 2rem;
 }
 header {
   height: 10vh;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   margin-inline: auto;
@@ -78,7 +119,6 @@ input[type="email"] {
   font-size: 1rem;
 }
 .header-links {
-  margin-left: 1rem;
   text-align: center;
 }
 .header-links a {
@@ -87,11 +127,10 @@ input[type="email"] {
   padding-left: 1rem;
 }
 .fa-bell {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 2rem;
   width: 1rem;
   color: hsl(77, 100%, 29%);
-  margin-top: 7px;
+  margin-top: 13px;
 }
 .header-btn {
   padding: 0.6rem 1rem;
@@ -144,7 +183,7 @@ input[type="email"] {
   align-items: center;
   padding: 0.3rem;
 }
-.update-form ::placeholder{
+.update-form ::placeholder {
   padding-left: 1rem;
 }
 .updates button {

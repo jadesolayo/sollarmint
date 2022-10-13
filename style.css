@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Red: hsl(4, 100%, 49%);
+  --White: hsl(0, 0%, 100%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+html {
+  font-size: 100%;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  padding-top: 1rem;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+i {
+  display: block;
+  font-size: 1.5rem;
+}
+main{
+    width: min(100%, 1440px);
+}
+header{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+input

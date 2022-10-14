@@ -10,6 +10,10 @@
 :root {
   --Red: hsl(4, 100%, 49%);
   --White: hsl(0, 0%, 100%);
+  --border-color-gray:  hsl(0, 0%, 71%);
+  --btn-color1: hsl(77, 100%, 29%);
+  --btn-color2: hsl(79, 94%, 20%);
+  --black: hsl(0, 0%, 0%);
 }
 html {
   font-size: 100%;
@@ -57,7 +61,66 @@ main {
     url("/images/SL-092920-35840-02\ 1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--White);
+}
+
+header {
+  height: 10vh;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--White);
+  margin-inline: auto;
+}
+.logo {
+  width: 10%;
+}
+.form-cont {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid var(--border-color-gray);
+  border-radius: 30px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  border: none;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.fa-magnifying-glass {
+  color: var(--border-color-gray);
+  font-size: 1rem;
+}
+.header-links {
+  text-align: center;
+}
+.header-links a {
+  margin-top: -10px;
+  color: var(--black);
+  padding-left: 1rem;
+}
+.fa-bell {
+  margin: 0 2rem;
+  width: 1rem;
+  color: var(--btn-color1);
+  margin-top: 13px;
+}
+.header-btn {
+  padding: 0.6rem 1rem;
+  padding-left: 1rem;
+  background-color: var(--btn-color1);
+  color: var(--White);
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 7px;
 }
 .landing-page-content {
   height: 90vh;
@@ -66,7 +129,7 @@ main {
 }
 .landing-page-copy {
   align-self: center;
-  width: 42%;
+  width: 44%;
 }
 .landing-page-copy h4 {
   font-size: 1.2rem;
@@ -84,63 +147,32 @@ main {
 .btn-cont button{
   border: none;
   padding: 1rem 2rem;
+  border-radius: 5px;
 }
-header {
-  height: 10vh;
-  padding: 1.5rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
+.btn1{
+  background-color: var(--btn-color1);
+  color: var(--White);
+}
+.btn2{
+  background-color: var(--White);
+  color: var(--black);
+  margin-left: 1rem;
+}
+.landing-page-img{
+  color: var(--black);
+}
+.img1-cont{
+  background-color: var(--White);
+}
+.img1-cont h4{
+  padding: .8rem;
+}
+.img1-cont img{
+  width: 90%;
   margin-inline: auto;
 }
-.logo {
-  width: 10%;
-}
-.form-cont {
-  margin-left: 3rem;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 2rem;
-  justify-content: space-between;
-  width: 30%;
-  border: 1px solid hsl(0, 0%, 71%);
-  border-radius: 30px;
-}
-input[type="text"],
-input[type="email"] {
-  border: none;
-}
-::placeholder {
-  font-family: "Poppins", sans-serif;
-}
-.fa-magnifying-glass {
-  color: hsl(0, 0%, 71%);
-  font-size: 1rem;
-}
-.header-links {
-  text-align: center;
-}
-.header-links a {
-  margin-top: -10px;
-  color: black;
-  padding-left: 1rem;
-}
-.fa-bell {
-  margin: 0 2rem;
-  width: 1rem;
-  color: hsl(77, 100%, 29%);
-  margin-top: 13px;
-}
-.header-btn {
-  padding: 0.6rem 1rem;
-  padding-left: 1rem;
-  background-color: hsl(77, 100%, 29%);
-  color: white;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 7px;
+.nft-content{
+  padding-top: .8rem;
 }
 footer {
   margin-top: 20rem;
@@ -162,10 +194,10 @@ footer {
 }
 .links a {
   display: block;
-  color: black;
+  color: var(--black);
 }
 h3 {
-  color: hsl(79, 94%, 20%);
+  color: var(--btn-color2);
 }
 input[type="email"] {
   border: none;
@@ -178,7 +210,7 @@ input[type="email"] {
   margin-bottom: 3rem;
 }
 .update-form {
-  border: 1px solid hsl(0, 0%, 71%);
+  border: 1px solid var(--border-color-gray);
   display: flex;
   align-items: center;
   padding: 0.3rem;
@@ -193,25 +225,25 @@ input[type="email"] {
   border-bottom-left-radius: 30px;
   padding: 0.5rem 1rem;
   border: none;
-  background-color: hsl(77, 100%, 29%);
-  color: white;
+  background-color: var(--btn-color1);
+  color: var(--White);
 }
 .footer-content-2 {
   margin-top: 4rem;
-  background-color: hsl(79, 94%, 20%);
+  background-color: var(--btn-color2);
   display: flex;
   justify-content: space-between;
 }
 .copyright,
 .terms {
-  color: white;
+  color: var(--White);
   padding: 2rem 3rem;
 }
 .terms {
   display: flex;
 }
 .terms a {
-  color: white;
+  color: var(--White);
   padding-left: 1rem;
 }
 .social-icons {
@@ -222,5 +254,5 @@ input[type="email"] {
 .social-icons .fa-brands {
   padding-left: 1.5rem;
   font-size: 1.2rem;
-  color: hsl(77, 100%, 29%);
+  color: var(--btn-color1);
 }

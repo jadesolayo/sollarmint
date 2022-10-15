@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Reset Styles */
 *,
 *::before,
 *::after {
@@ -10,10 +13,13 @@
 :root {
   --Red: hsl(4, 100%, 49%);
   --White: hsl(0, 0%, 100%);
-  --border-color-gray:  hsl(0, 0%, 71%);
+  --border-color-gray: hsl(0, 0%, 71%);
   --btn-color1: hsl(77, 100%, 29%);
   --btn-color2: hsl(79, 94%, 20%);
   --black: hsl(0, 0%, 0%);
+  --font-family-1: "Poppins", sans-serif;
+  --font-family-2: "Play", sans-serif;
+  --font-family-3: "Roboto", sans-serif;
 }
 html {
   font-size: 100%;
@@ -44,13 +50,13 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-i {
-  display: block;
-  font-size: 1.5rem;
-}
+
 main {
   margin-inline: auto;
 }
+/* End Reset styles */
+
+/* Landing Page Styles */
 .landing-page {
   height: 100vh;
   background: linear-gradient(
@@ -58,7 +64,7 @@ main {
       rgba(107, 148, 0, 0.96) 0%,
       rgba(107, 148, 0, 0.35) 155.89%
     ),
-    url("/images/SL-092920-35840-02\ 1.svg");
+    url("/images/rm218batch5-katie-18\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--White);
@@ -77,10 +83,10 @@ header {
   width: 10%;
 }
 .form-cont {
-  margin-left: 3rem;
+  margin-left: 2rem;
   display: flex;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   justify-content: space-between;
   width: 30%;
   border: 1px solid var(--border-color-gray);
@@ -107,7 +113,7 @@ input[type="email"] {
   padding-left: 1rem;
 }
 .fa-bell {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
   width: 1rem;
   color: var(--btn-color1);
   margin-top: 13px;
@@ -125,15 +131,18 @@ input[type="email"] {
 .landing-page-content {
   height: 90vh;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 4rem;
 }
 .landing-page-copy {
+  font-family: var(--font-family-3);
   align-self: center;
   width: 44%;
 }
 .landing-page-copy h4 {
-  font-size: 1.2rem;
-  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
 }
 .landing-page-copy h1 {
   font-family: "Play", sans-serif;
@@ -142,38 +151,98 @@ input[type="email"] {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .landing-page-copy p {
+  line-height: 1.5;
   padding-bottom: 3rem;
 }
-.btn-cont button{
+.btn-cont button {
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 5px;
 }
-.btn1{
+.btn1 {
   background-color: var(--btn-color1);
   color: var(--White);
 }
-.btn2{
+.btn2 {
   background-color: var(--White);
   color: var(--black);
   margin-left: 1rem;
 }
-.landing-page-img{
+
+.landing-page-img {
+  width: 50%;
+  height: 65vh;
+  display: flex;
+  justify-content: flex-end;
   color: var(--black);
 }
-.img1-cont{
+.img-cont1{
+  align-self: flex-start;
+}
+.img-cont {
   background-color: var(--White);
 }
-.img1-cont h4{
-  padding: .8rem;
+.img-cont h4 {
+  padding: 0.8rem;
+  font-family: var(--font-family-2);
 }
-.img1-cont img{
+.img-cont img {
   width: 90%;
   margin-inline: auto;
 }
-.nft-content{
-  padding-top: .8rem;
+.nft-content {
+  font-family: var(--font-family-3);
+  padding: 1rem;
+  padding-top: 0.8rem;
 }
+.nft-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.legend span {
+  font-size: 0.7rem;
+  color: var(--border-color-gray);
+}
+.place-bid-btn {
+  color: var(--White);
+  background-color: var(--btn-color1);
+}
+.legend-icon {
+  display: flex;
+  width: 50%;
+  margin-left: -45px;
+  margin-top: 5px;
+}
+.legend-icon img {
+  width: 17%;
+}
+.legend-icon span {
+  font-size: 0.8rem;
+  align-self: center;
+  margin-left: -40px;
+}
+.nft-content2 {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nft-content .text1 {
+  font-size: 0.8rem;
+  color: var(--border-color-gray);
+}
+.nft-content .text2 {
+  padding-top: .3rem;
+  font-family: var(--font-family-2);
+}
+.img-cont2{
+  margin-left: 1.5rem;
+  align-self: flex-end;
+}
+/* End of landing page styles */
+
+/* Footer Styles */
+
 footer {
   margin-top: 20rem;
 }

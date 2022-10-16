@@ -14,7 +14,8 @@
       src="https://kit.fontawesome.com/68a6b8dc1f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_queries.css" />
   </head>
   <body>
     <main>
@@ -28,15 +29,25 @@
             />
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="header-links">
+          <div class="header-links" id="nav">
+            <div class="close-icon" id="close-icon">
+              <i
+                class="fa fa-times"
+                onclick="closeToggler()"
+                aria-hidden="true"
+              ></i>
+            </div>
             <a href="#">Explore</a>
             <a href="#">Collections</a>
             <a href="#">Activities</a>
             <a href="#">Create</a>
             <a href="#">Profile</a>
-            <i class="fa-solid fa-bell"></i>
-            <button class="header-btn">connect wallet</button>
           </div>
+          <div class="icon">
+            <i class="fa-solid fa-bell"></i>
+            <button class="header-btn"><a href="#">connect wallet</a></button>
+          </div>
+          <i class="fa-solid fa-bars" onclick="leftToggler()"></i>
         </header>
         <div class="landing-page-content">
           <div class="landing-page-copy">
@@ -49,8 +60,8 @@
               ut dui sed nulla morbi quam eget luctus. In a vel morbi sed nisi.
             </p>
             <div class="btn-cont">
-              <button class="btn1">Connect wallet</button>
-              <button class="btn2">Create</button>
+              <button class="btn1"><a href="#">Connect wallet</a></button>
+              <button class="btn2"><a href="#">Create</a></button>
             </div>
           </div>
           <div class="landing-page-img">
@@ -115,6 +126,7 @@
             </div>
           </div>
         </div>
+        <div class="line"></div>
       </section>
 
       <!-- <footer>
@@ -190,5 +202,6 @@
         </div>
       </footer> -->
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

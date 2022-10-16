@@ -43,14 +43,15 @@ picture {
 a,
 a:visited,
 a:active {
+  color: var(--white);
   text-decoration: none;
-  padding-top: 1rem;
 }
 a:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
-
+i {
+  font-size: 1.3rem;
+}
 main {
   margin-inline: auto;
 }
@@ -58,7 +59,7 @@ main {
 
 /* Landing Page Styles */
 .landing-page {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
       180deg,
       rgba(107, 148, 0, 0.96) 0%,
@@ -71,7 +72,7 @@ main {
 }
 
 header {
-  height: 10vh;
+  height: 12vh;
   padding: 1.5rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -92,7 +93,7 @@ header {
   border: 1px solid var(--border-color-gray);
   border-radius: 30px;
 }
-input[type="text"],
+.form-cont input[type="text"],
 input[type="email"] {
   width: 80%;
   border: none;
@@ -105,31 +106,44 @@ input[type="email"] {
   font-size: 1rem;
 }
 .header-links {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+.close-icon {
+  color: var(--white);
+  display: none;
+}
+
 .header-links a {
   margin-top: -10px;
   color: var(--black);
   padding-left: 1rem;
 }
+.icon {
+  display: flex;
+  align-items: center;
+}
 .fa-bell {
   margin: 0 1.5rem;
   width: 1rem;
   color: var(--btn-color1);
-  margin-top: 13px;
 }
 .header-btn {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   padding-left: 1rem;
   background-color: var(--btn-color1);
   color: var(--White);
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 10px;
   border: none;
   margin-bottom: 7px;
 }
+.fa-bars {
+  color: var(--btn-color1);
+  font-size: 1.1rem;
+  display: none;
+}
 .landing-page-content {
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -154,45 +168,51 @@ input[type="email"] {
   line-height: 1.5;
   padding-bottom: 3rem;
 }
-.btn-cont button {
+.btn1,
+.btn2 {
   border: none;
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 5px;
 }
 .btn1 {
   background-color: var(--btn-color1);
   color: var(--White);
 }
+.btn1 a {
+  color: var(--white);
+}
+
 .btn2 {
   background-color: var(--White);
   color: var(--black);
   margin-left: 1rem;
 }
-
+.btn2 a {
+  color: var(--black);
+}
 .landing-page-img {
   width: 50%;
-  height: 65vh;
   display: flex;
   justify-content: flex-end;
   color: var(--black);
 }
-.img-cont1{
+.img-cont1 {
   align-self: flex-start;
 }
 .img-cont {
+  padding: 1rem;
   background-color: var(--White);
 }
 .img-cont h4 {
-  padding: 0.8rem;
+  padding-bottom: 0.8rem;
   font-family: var(--font-family-2);
 }
 .img-cont img {
-  width: 90%;
+  width: 100%;
   margin-inline: auto;
 }
 .nft-content {
   font-family: var(--font-family-3);
-  padding: 1rem;
   padding-top: 0.8rem;
 }
 .nft-content1 {
@@ -205,22 +225,25 @@ input[type="email"] {
   color: var(--border-color-gray);
 }
 .place-bid-btn {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
   color: var(--White);
   background-color: var(--btn-color1);
 }
 .legend-icon {
   display: flex;
-  width: 50%;
-  margin-left: -45px;
+  width: 30%;
   margin-top: 5px;
 }
 .legend-icon img {
-  width: 17%;
+  width: 70%;
 }
 .legend-icon span {
   font-size: 0.8rem;
+  padding-left: 0.5rem;
   align-self: center;
-  margin-left: -40px;
 }
 .nft-content2 {
   margin-top: 0.8rem;
@@ -232,10 +255,11 @@ input[type="email"] {
   color: var(--border-color-gray);
 }
 .nft-content .text2 {
-  padding-top: .3rem;
+  padding-top: 0.3rem;
   font-family: var(--font-family-2);
 }
-.img-cont2{
+.img-cont2 {
+  margin-top: 5rem;
   margin-left: 1.5rem;
   align-self: flex-end;
 }
@@ -325,3 +349,16 @@ input[type="email"] {
   font-size: 1.2rem;
   color: var(--btn-color1);
 }
+.line {
+  width: 100%;
+  height: 10vh;
+  margin-top: -2rem;
+  background: linear-gradient(
+    180deg,
+    #6b9400 0.42%,
+    rgba(255, 255, 255, 0) 0.42%,
+    #ffffff 50%
+  );
+}
+
+/* Media Queries */

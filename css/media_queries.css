@@ -112,6 +112,7 @@
     font-size: 2rem;
   }
   .landing-page-img {
+    margin-top: 4rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -126,7 +127,7 @@
     align-self: center;
   }
   .img-cont2 {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-left: 0;
     align-self: center;
   }

@@ -200,6 +200,7 @@ input[type="email"] {
   align-self: flex-start;
 }
 .img-cont {
+  border-radius: 5px;
   padding: 1rem;
   background-color: var(--White);
 }

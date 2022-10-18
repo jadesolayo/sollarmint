@@ -362,5 +362,146 @@ input[type="email"] {
     #ffffff 50%
   );
 }
+.trending-section {
+  min-height: 100vh;
+  margin-top: -2rem;
+  padding: 4rem;
+  background: radial-gradient(
+      38.07% 28.02% at 11.93% 71.98%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      48.42% 25.56% at 93.27% 68.6%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      33.11% 21.97% at 82.89% 35.45%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      50.79% 17.42% at 8.45% 22.45%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    #ffffff;
+}
+.trending-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending-section-header h2 {
+  font-size: 2.4rem;
+  font-family: var(--font-family-2);
+}
+.trending-icons {
+  display: flex;
+}
+.right {
+  margin-left: 1rem;
+}
+.right,
+.left {
+  width: 40%;
+}
+.cards-section {
+  display: grid;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1.2rem;
+}
 
+.img1 {
+  background: url("/images/Rectangle\ 23.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+}
+.img2 {
+  background: url("/images/Rectangle\ 24.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+}
+.img3 {
+  background: url("/images/Rectangle\ 25.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+}
+.img4 {
+  background: url("/images/Rectangle\ 26.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+}
+.card-content {
+  width: 257px;
+  background-color: var(--White);
+  padding: 1rem;
+}
+.nft-info {
+  display: flex;
+  padding-top: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--btn-color1);
+  font-family: var(--font-family-3);
+  font-weight: 600;
+}
+.info1 span {
+  font-weight: 500;
+  color: var(--border-color-gray);
+  padding-left: 0.5rem;
+}
+.nft-info-btn {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nft-info-btn img {
+  width: 17%;
+}
+.nft-info-btn img:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.place-bid {
+  border: none;
+  padding: 0.7rem 1.8rem;
+  background-color: var(--btn-color1);
+  border-radius: 5px;
+  color: var(--White);
+}
+.card-img{
+  padding: 1rem;
+}
+.tag-cont {
+  padding: .4rem 1rem;
+  width: 75%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--btn-color1);
+  border-radius: 30px;
+}
+.tag-cont p{
+  color: var(--White);
+  font-size: .9rem;
+}
+.tag{
+  width: 20%;
+}
+.check {
+  top: 5%;
+  left: 18%;
+  position: absolute;
+}
 /* Media Queries */

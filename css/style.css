@@ -52,6 +52,13 @@ a:hover {
 i {
   font-size: 1.3rem;
 }
+.btn {
+  border-radius: 5px;
+  color: var(--White);
+  background-color: var(--btn-color1);
+  border: none;
+  outline: none;
+}
 main {
   margin-inline: auto;
 }
@@ -409,6 +416,8 @@ input[type="email"] {
 }
 .cards-section {
   display: grid;
+  padding: 0 4rem;
+  place-content: center;
   margin-top: 4rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -417,30 +426,18 @@ input[type="email"] {
 
 .img1 {
   background: url("/images/Rectangle\ 23.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40vh;
 }
 .img2 {
   background: url("/images/Rectangle\ 24.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40vh;
 }
 .img3 {
   background: url("/images/Rectangle\ 25.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40vh;
 }
 .img4 {
   background: url("/images/Rectangle\ 26.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40vh;
 }
 .card-content {
-  width: 257px;
+  width: 100%;
   background-color: var(--White);
   padding: 1rem;
 }
@@ -466,7 +463,8 @@ input[type="email"] {
   justify-content: space-between;
 }
 .nft-info-btn img {
-  width: 17%;
+  width: 30%;
+  margin-right: 0.5rem;
 }
 .nft-info-btn img:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -474,17 +472,32 @@ input[type="email"] {
 }
 .place-bid {
   border: none;
+  width: 60%;
   padding: 0.7rem 1.8rem;
   background-color: var(--btn-color1);
   border-radius: 5px;
   color: var(--White);
 }
-.card-img{
+.place-bid-content {
+  display: flex;
+  margin-left: 1rem;
+}
+.nft-no {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 5%;
+}
+.card-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 1rem;
 }
 .tag-cont {
-  padding: .4rem 1rem;
-  width: 75%;
+  padding: 0.4rem 1rem;
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -492,16 +505,78 @@ input[type="email"] {
   background-color: var(--btn-color1);
   border-radius: 30px;
 }
-.tag-cont p{
+.tag-cont p {
   color: var(--White);
-  font-size: .9rem;
+  font-size: 0.8rem;
+  margin-left: 1rem;
 }
-.tag{
+.tag {
   width: 20%;
 }
 .check {
   top: 5%;
   left: 18%;
   position: absolute;
+}
+.top-sellers-section {
+  margin-top: 4rem;
+}
+.top-sellers-header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-sellers-header h2 {
+  font-family: var(--font-family-2);
+  font-size: 2.4rem;
+}
+.top-sellers-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  grid-gap: 1.5rem;
+}
+.top-sellers {
+  place-content: center;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.top-seller {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 71%);
+  border-radius: 5px;
+  background-color: var(--white);
+  padding: 1rem;
+}
+.top-seller:hover {
+  background-color: hsl(76, 72%, 87%);
+}
+.top-seller span {
+  color: var(--btn-color1);
+}
+.topseller-info {
+  display: flex;
+  margin-left: 3rem;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.topseller-img {
+  width: 50%;
+}
+.check-ts {
+  top: 5%;
+  left: 18%;
+  position: absolute;
+}
+.topseller-value {
+  width: 100%;
+}
+.topseller-value p{
+  font-weight: 700;
+  color: var(--btn-color1);
 }
 /* Media Queries */

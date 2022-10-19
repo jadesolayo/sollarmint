@@ -53,6 +53,34 @@
   .place-bid-btn {
     font-size: 0.6rem;
   }
+  .cards-section {
+    padding: 0;
+  }
+  .place-bid {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  .nft-info {
+    font-size: 0.8rem;
+  }
+  .top-sellers {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .topseller-value {
+    margin-left: 1rem;
+  }
+  .topseller-name {
+    font-size: 0.9rem;
+  }
+  .topseller-value p {
+    font-size: 0.9rem;
+  }
+  .check-ts {
+    top: 2%;
+    left: 22%;
+    position: absolute;
+  }
 }
 @media (max-width: 992px) {
   header {
@@ -97,9 +125,18 @@
     align-items: center;
     justify-content: center;
   }
+  .cards-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+  }
+  .top-sellers {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
 }
 @media (max-width: 570px) {
-  header{
+  header {
     height: 8vh;
   }
   .landing-page-content {
@@ -120,7 +157,7 @@
   .legend-icon {
     width: 20%;
   }
-  .img-cont{
+  .img-cont {
     width: 100%;
   }
   .img-cont1 {
@@ -131,10 +168,29 @@
     margin-left: 0;
     align-self: center;
   }
-  .trending-section{
+  .trending-section {
     padding: 3rem 1.5rem;
   }
-  .trending-section-header h2{
-    font-size: 1.4rem;
+  .trending-section-header h2,
+  .top-sellers-header h2 {
+    font-size: 1.5rem;
+  }
+  .cards-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+  }
+  .top-sellers-btn {
+    padding: 0.7rem 1.3rem;
+  }
+  .top-sellers {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .check-ts {
+    top: 2%;
+    left: 16%;
+    position: absolute;
   }
 }

@@ -80,6 +80,7 @@ main {
 
 header {
   position: fixed;
+  z-index: 20;
   top: 0;
   width: 100%;
   height: 10vh;
@@ -500,6 +501,7 @@ input[type="email"] {
   padding: 1rem;
 }
 .tag-cont {
+  z-index: 0;
   padding: 0.4rem 1rem;
   width: 80%;
   position: relative;

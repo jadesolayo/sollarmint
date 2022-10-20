@@ -162,7 +162,7 @@ input[type="email"] {
   padding: 4rem;
 }
 .landing-page-copy {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-family: var(--font-family-3);
   align-self: center;
   width: 44%;

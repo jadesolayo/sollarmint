@@ -79,6 +79,10 @@ main {
 }
 
 header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  width: 100%;
   height: 10vh;
   padding: 1.5rem 3rem;
   display: flex;
@@ -152,12 +156,14 @@ input[type="email"] {
   display: none;
 }
 .landing-page-content {
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4rem;
 }
 .landing-page-copy {
+  margin-top: 4rem;
   font-family: var(--font-family-3);
   align-self: center;
   width: 44%;
@@ -274,6 +280,307 @@ input[type="email"] {
 }
 /* End of landing page styles */
 
+.line {
+  width: 100%;
+  height: 13vh;
+  margin-top: 3rem;
+  background: linear-gradient(
+    180deg,
+    #6b9400 0.42%,
+    rgba(255, 255, 255, 0) 0.42%,
+    #ffffff 50%
+  );
+}
+.trending-section {
+  min-height: 100vh;
+  margin-top: -2rem;
+  background: radial-gradient(
+      38.07% 28.02% at 11.93% 71.98%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      48.42% 25.56% at 93.27% 68.6%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      33.11% 21.97% at 82.89% 35.45%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    radial-gradient(
+      50.79% 17.42% at 8.45% 22.45%,
+      rgba(165, 197, 10, 0.3) 0%,
+      rgba(165, 197, 10, 0) 100%
+    ),
+    #ffffff;
+}
+.trending-section-header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending-section-header h2 {
+  font-size: 2.4rem;
+  font-family: var(--font-family-2);
+}
+.trending-icons {
+  display: flex;
+}
+.right {
+  margin-left: 1rem;
+}
+.right,
+.left {
+  width: 40%;
+}
+.cards-section {
+  display: grid;
+  padding: 0 4rem;
+  place-content: center;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1.2rem;
+}
+
+.img1 {
+  background: url("/images/Rectangle\ 23.svg");
+}
+.img2 {
+  background: url("/images/Rectangle\ 24.svg");
+}
+.img3 {
+  background: url("/images/Rectangle\ 25.svg");
+}
+.img4 {
+  background: url("/images/Rectangle\ 26.svg");
+}
+.card-content {
+  width: 100%;
+  border: 1px solid var(--border-color-gray);
+  background-color: var(--White);
+  padding: 1rem;
+}
+.nft-info {
+  display: flex;
+  padding-top: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--btn-color1);
+  font-family: var(--font-family-3);
+  font-weight: 600;
+}
+.info1 span {
+  font-weight: 500;
+  color: var(--border-color-gray);
+  padding-left: 0.5rem;
+}
+.nft-info-btn {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nft-info-btn img {
+  width: 30%;
+  margin-right: 0.5rem;
+}
+.nft-info-btn img:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.place-bid {
+  border: none;
+  width: 60%;
+  padding: 0.7rem 1.8rem;
+  background-color: var(--btn-color1);
+  border-radius: 5px;
+  color: var(--White);
+}
+.place-bid-content {
+  display: flex;
+  margin-left: 1rem;
+}
+.nft-no {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 5%;
+}
+.card-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 47vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.tag-cont {
+  z-index: 0;
+  padding: 0.4rem 1rem;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(77, 100%, 29%, 0.658);
+  border-radius: 30px;
+}
+.tag-cont p {
+  color: var(--White);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+.tag {
+  width: 20%;
+}
+.check {
+  top: 5%;
+  left: 18%;
+  position: absolute;
+}
+.top-sellers-section,
+.live-auction-section {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.top-sellers-header,
+.live-auction-header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-sellers-header h2,
+.live-auction-header h2 {
+  font-family: var(--font-family-2);
+  font-size: 2.4rem;
+}
+.top-sellers-btn,
+.live-auction-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  grid-gap: 1.5rem;
+}
+.top-sellers {
+  place-content: center;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.top-seller {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 71%);
+  border-radius: 5px;
+  background-color: var(--white);
+  padding: 1rem;
+}
+.top-seller:hover {
+  background-color: hsl(76, 72%, 87%);
+}
+.top-seller span {
+  color: var(--btn-color1);
+}
+.topseller-info {
+  display: flex;
+  margin-left: 2rem;
+  position: relative;
+  width: 90%;
+  align-items: center;
+}
+.topseller-img {
+  width: 50%;
+}
+.check-ts {
+  top: 5%;
+  left: 18%;
+  position: absolute;
+}
+.topseller-value {
+  margin-left: 1rem;
+  width: 100%;
+}
+.topseller-value h4 {
+  font-size: 0.9rem;
+}
+.topseller-value p {
+  font-weight: 700;
+  color: var(--btn-color1);
+}
+
+.live-auction-cards {
+  display: grid;
+  padding: 0 4rem;
+  place-content: center;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.2rem;
+}
+.auction-img1,
+.auction-img2,
+.auction-img3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 65vh;
+}
+
+.auction-content {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 53px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(21px);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--White);
+}
+.auction-content .content1 .text1 {
+  font-size: 0.9rem;
+}
+.content1 .text2 {
+  padding-top: 0.5rem;
+}
+.content2 .text2 {
+  padding-top: 0.5rem;
+  font-family: var(--font-family-2);
+}
+.auction-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color-gray);
+  position: relative;
+  padding: 1.5rem;
+}
+.auction-check {
+  bottom: 28%;
+  left: 12%;
+  position: absolute;
+}
+.auction-tag-cont {
+  display: flex;
+  width: 70%;
+}
+.creator {
+  color: hsl(0, 2%, 40%);
+  font-size: 0.9rem;
+}
+.info-cont {
+  padding-left: 0.5rem;
+}
+.button-cont {
+  width: 25%;
+}
+.auction-btn {
+  padding: 0.5rem 1rem;
+}
 /* Footer Styles */
 
 footer {
@@ -358,225 +665,4 @@ input[type="email"] {
   font-size: 1.2rem;
   color: var(--btn-color1);
 }
-.line {
-  width: 100%;
-  height: 10vh;
-  margin-top: -2rem;
-  background: linear-gradient(
-    180deg,
-    #6b9400 0.42%,
-    rgba(255, 255, 255, 0) 0.42%,
-    #ffffff 50%
-  );
-}
-.trending-section {
-  min-height: 100vh;
-  margin-top: -2rem;
-  padding: 4rem;
-  background: radial-gradient(
-      38.07% 28.02% at 11.93% 71.98%,
-      rgba(165, 197, 10, 0.3) 0%,
-      rgba(165, 197, 10, 0) 100%
-    ),
-    radial-gradient(
-      48.42% 25.56% at 93.27% 68.6%,
-      rgba(165, 197, 10, 0.3) 0%,
-      rgba(165, 197, 10, 0) 100%
-    ),
-    radial-gradient(
-      33.11% 21.97% at 82.89% 35.45%,
-      rgba(165, 197, 10, 0.3) 0%,
-      rgba(165, 197, 10, 0) 100%
-    ),
-    radial-gradient(
-      50.79% 17.42% at 8.45% 22.45%,
-      rgba(165, 197, 10, 0.3) 0%,
-      rgba(165, 197, 10, 0) 100%
-    ),
-    #ffffff;
-}
-.trending-section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.trending-section-header h2 {
-  font-size: 2.4rem;
-  font-family: var(--font-family-2);
-}
-.trending-icons {
-  display: flex;
-}
-.right {
-  margin-left: 1rem;
-}
-.right,
-.left {
-  width: 40%;
-}
-.cards-section {
-  display: grid;
-  padding: 0 4rem;
-  place-content: center;
-  margin-top: 4rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  column-gap: 1.2rem;
-}
-
-.img1 {
-  background: url("/images/Rectangle\ 23.svg");
-}
-.img2 {
-  background: url("/images/Rectangle\ 24.svg");
-}
-.img3 {
-  background: url("/images/Rectangle\ 25.svg");
-}
-.img4 {
-  background: url("/images/Rectangle\ 26.svg");
-}
-.card-content {
-  width: 100%;
-  background-color: var(--White);
-  padding: 1rem;
-}
-.nft-info {
-  display: flex;
-  padding-top: 0.5rem;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  color: var(--btn-color1);
-  font-family: var(--font-family-3);
-  font-weight: 600;
-}
-.info1 span {
-  font-weight: 500;
-  color: var(--border-color-gray);
-  padding-left: 0.5rem;
-}
-.nft-info-btn {
-  padding-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nft-info-btn img {
-  width: 30%;
-  margin-right: 0.5rem;
-}
-.nft-info-btn img:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-}
-.place-bid {
-  border: none;
-  width: 60%;
-  padding: 0.7rem 1.8rem;
-  background-color: var(--btn-color1);
-  border-radius: 5px;
-  color: var(--White);
-}
-.place-bid-content {
-  display: flex;
-  margin-left: 1rem;
-}
-.nft-no {
-  font-size: 1rem;
-  font-weight: 600;
-  width: 5%;
-}
-.card-img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  height: 45vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1rem;
-}
-.tag-cont {
-  padding: 0.4rem 1rem;
-  width: 80%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--btn-color1);
-  border-radius: 30px;
-}
-.tag-cont p {
-  color: var(--White);
-  font-size: 0.8rem;
-  margin-left: 1rem;
-}
-.tag {
-  width: 20%;
-}
-.check {
-  top: 5%;
-  left: 18%;
-  position: absolute;
-}
-.top-sellers-section {
-  margin-top: 4rem;
-}
-.top-sellers-header {
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.top-sellers-header h2 {
-  font-family: var(--font-family-2);
-  font-size: 2.4rem;
-}
-.top-sellers-btn {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  grid-gap: 1.5rem;
-}
-.top-sellers {
-  place-content: center;
-  display: grid;
-  grid-gap: 1.5rem;
-  margin-top: 3rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-}
-.top-seller {
-  display: flex;
-  border: 1px solid hsl(0, 0%, 71%);
-  border-radius: 5px;
-  background-color: var(--white);
-  padding: 1rem;
-}
-.top-seller:hover {
-  background-color: hsl(76, 72%, 87%);
-}
-.top-seller span {
-  color: var(--btn-color1);
-}
-.topseller-info {
-  display: flex;
-  margin-left: 3rem;
-  position: relative;
-  width: 80%;
-  align-items: center;
-}
-.topseller-img {
-  width: 50%;
-}
-.check-ts {
-  top: 5%;
-  left: 18%;
-  position: absolute;
-}
-.topseller-value {
-  width: 100%;
-}
-.topseller-value p{
-  font-weight: 700;
-  color: var(--btn-color1);
-}
-/* Media Queries */
+/* End of Footer Styles */

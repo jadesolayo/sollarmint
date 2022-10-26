@@ -198,6 +198,9 @@
   .live-auction-header h2 {
     font-size: 1.5rem;
   }
+  .tag-cont{
+    width: 60%;
+  }
   .cards-section {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

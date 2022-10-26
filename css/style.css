@@ -17,6 +17,7 @@
   --btn-color1: hsl(77, 100%, 29%);
   --btn-color2: hsl(79, 94%, 20%);
   --black: hsl(0, 0%, 0%);
+  --button-gray: hsl(0, 0%, 86%);
   --font-family-1: "Poppins", sans-serif;
   --font-family-2: "Play", sans-serif;
   --font-family-3: "Roboto", sans-serif;
@@ -347,16 +348,16 @@ input[type="email"] {
 }
 
 .img1 {
-  background: url("/images/Rectangle\ 23.svg");
+  background: url("/images/Rectangle 23.svg");
 }
 .img2 {
-  background: url("/images/Rectangle\ 24.svg");
+  background: url("/images/Rectangle 24.svg");
 }
 .img3 {
-  background: url("/images/Rectangle\ 25.svg");
+  background: url("/images/Rectangle 25.svg");
 }
 .img4 {
-  background: url("/images/Rectangle\ 26.svg");
+  background: url("/images/Rectangle 26.svg");
 }
 .card-content {
   width: 100%;
@@ -420,8 +421,8 @@ input[type="email"] {
 }
 .tag-cont {
   z-index: 0;
-  padding: 0.4rem 1rem;
-  width: 80%;
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  width: 60%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -435,7 +436,7 @@ input[type="email"] {
   margin-left: 1rem;
 }
 .tag {
-  width: 20%;
+  width: 25%;
 }
 .check {
   top: 5%;
@@ -445,7 +446,7 @@ input[type="email"] {
 .top-sellers-section,
 .live-auction-section {
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 .top-sellers-header,
 .live-auction-header {
@@ -581,13 +582,164 @@ input[type="email"] {
 .auction-btn {
   padding: 0.5rem 1rem;
 }
+
+/* Explore section styles */
+.explore-section {
+  padding: 5rem 4rem;
+}
+.explore-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-2);
+}
+.explore-header h2 {
+  font-size: 2.4rem;
+}
+.explore-btn-cont button {
+  margin-left: 1rem;
+}
+.explore-btn-cont .btn1 {
+  padding: 0.7rem 1.5rem;
+}
+.btn-gray {
+  color: var(--black);
+  background-color: var(--button-gray);
+  padding: 0.7rem 1.5rem;
+}
+.btn-gray:hover {
+  background-color: var(--btn-color1);
+  color: var(--White);
+  transition: 0.5s ease-in;
+}
+.explore-cards-section {
+  place-content: center;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.exp {
+  background-color: var(--White);
+}
+.exp p {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.explore-card2,
+.explore-card3,
+.explore-card4,
+.explore-card1 {
+  position: relative;
+}
+.exp-btn-cont {
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.exp-btn {
+  font-size: 0.97rem;
+  padding: 0.7rem 1.5rem;
+  background-color: hsl(0, 65%, 55%);
+}
+.btn-cont1,
+.btn-cont2,
+.btn-cont3 {
+  display: none;
+}
+
+.explore-card2:hover .btn-cont1,
+.explore-card3:hover .btn-cont2,
+.explore-card4:hover .btn-cont3 {
+  display: block;
+}
+.exp-card-content {
+  width: 100%;
+  margin-top: 13rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 53px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(21px);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  color: var(--White);
+}
+.people-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.people {
+  width: 65%;
+  align-items: center;
+  display: flex;
+}
+.people p {
+  color: hsl(0, 2%, 40%);
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.people-cont .place-bid-content {
+  width: 22%;
+}
+.place-bid-content span {
+  padding-left: 0.5rem;
+}
+.love-img {
+  width: 30%;
+}
+.p1,
+.p2 {
+  border-radius: 50%;
+  width: 13%;
+}
+.p2 {
+  margin-left: -0.7rem;
+}
+.create-nfts-section {
+  padding: 1rem 4rem;
+}
+.create-nfts-section h1 {
+  font-size: 2.6rem;
+  width: 36%;
+  margin-inline: auto;
+  font-family: var(--font-family-2);
+}
+.create-nft-cont {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.create-nft-img {
+  width: 45%;
+  margin-top: 3rem;
+}
+.create-nft-content {
+  width: 50%;
+  margin-left: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.nft-content-1 h3 {
+  font-size: 1.4rem;
+  font-family: var(--font-family-2);
+  color: var(--black);
+  padding: 1.2rem 0;
+}
 /* Footer Styles */
 
 footer {
-  margin-top: 20rem;
+  margin-top: 5rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
 .footer-content-1 {
-  padding: 1rem 4rem;
+  padding: 2.5rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -603,6 +755,7 @@ footer {
 }
 .links a {
   display: block;
+  padding-top: .8rem;
   color: var(--black);
 }
 h3 {
@@ -638,7 +791,7 @@ input[type="email"] {
   color: var(--White);
 }
 .footer-content-2 {
-  margin-top: 4rem;
+  margin-top: 1rem;
   background-color: var(--btn-color2);
   display: flex;
   justify-content: space-between;

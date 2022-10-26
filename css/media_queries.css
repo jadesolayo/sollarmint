@@ -146,6 +146,12 @@
   .live-auction-cards {
     grid-template-columns: 1fr;
   }
+  .explore-btn-cont{
+    display: none;
+  }
+  .harmburger:hover{
+    
+  }
 }
 @media (max-width: 670px) {
   header {

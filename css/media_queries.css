@@ -41,7 +41,7 @@
   }
 }
 @media (max-width: 1180px) {
-  .live-auction-cards{
+  .live-auction-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -146,11 +146,11 @@
   .live-auction-cards {
     grid-template-columns: 1fr;
   }
-  .explore-btn-cont{
+  .explore-btn-cont {
     display: none;
   }
-  .harmburger:hover{
-    
+  .explore-section {
+    padding: 1.5rem;
   }
 }
 @media (max-width: 670px) {
@@ -201,10 +201,11 @@
   }
   .trending-section-header h2,
   .top-sellers-header h2,
-  .live-auction-header h2 {
+  .live-auction-header h2,
+  .explore-header h2 {
     font-size: 1.5rem;
   }
-  .tag-cont{
+  .tag-cont {
     width: 60%;
   }
   .cards-section {
@@ -227,18 +228,93 @@
   }
   .top-sellers {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
   .check-ts {
     top: 2%;
     left: 13%;
     position: absolute;
   }
-  .live-auction-section{
+  .live-auction-section {
     padding: 0;
   }
-  .live-auction-cards{
+  .live-auction-cards {
     padding: 0;
   }
-
+  .explore-cards-section {
+    grid-template-columns: 1fr;
+  }
+  .create-nfts-section {
+    padding: 1.5rem;
+  }
+  .create-nfts-section h1 {
+    font-size: 1.67rem;
+  }
+  .create-nft-cont {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .create-nft-img {
+    width: 100%;
+    margin-top: -0.5rem;
+  }
+  .create-nft-content {
+    margin-left: 0;
+    margin-top: 2rem;
+    place-content: center;
+    padding: 1rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .footer-content-1 {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+  .footer-img {
+    
+    width: 30%;
+  }
+  .marketplace,
+  .account,
+  .resources,
+  .company {
+    width: 100%;
+    margin-top: 2rem;
+    margin-inline: auto;
+  }
+  .updates {
+    width: 100%;
+  }
+  .updates h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .update-form {
+    width: 90%;
+  }
+  .social-icons {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  #fb-icon{
+    padding-left: 0;
+  }
+  .footer-content-2{
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+  .copyright, .terms{
+    padding: 0;
+    font-size: .8rem;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    order: 1;
+  }
+  .terms{
+    order: -1;
+    justify-content: center;
+  }
+  
 }

@@ -422,7 +422,7 @@ input[type="email"] {
 .tag-cont {
   z-index: 0;
   padding: 0.4rem 0.8rem 0.4rem 0.4rem;
-  width: 60%;
+  width: 65%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -569,8 +569,8 @@ input[type="email"] {
   display: flex;
   width: 60%;
 }
-.info-cont h4{
-  font-size: .9rem;
+.info-cont h4 {
+  font-size: 0.9rem;
 }
 .creator {
   color: hsl(0, 2%, 40%);
@@ -586,14 +586,13 @@ input[type="email"] {
   padding: 0.5rem 1rem;
 }
 
-
-
 /* Explore section styles */
 .explore-section {
   padding: 5rem 4rem;
 }
 .explore-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: var(--font-family-2);
 }
@@ -706,13 +705,15 @@ input[type="email"] {
 .p2 {
   margin-left: -0.7rem;
 }
+/* create nfts styles */
 .create-nfts-section {
   padding: 1rem 4rem;
 }
 .create-nfts-section h1 {
   font-size: 2.6rem;
-  width: 36%;
-  margin-inline: auto;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
   font-family: var(--font-family-2);
 }
 .create-nft-cont {
@@ -731,6 +732,11 @@ input[type="email"] {
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+.nft-content-1 {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color-gray);
 }
 .nft-content-1 h3 {
   font-size: 1.4rem;
@@ -761,7 +767,7 @@ footer {
 }
 .links a {
   display: block;
-  padding-top: .8rem;
+  padding-top: 0.8rem;
   color: var(--black);
 }
 h3 {
@@ -796,24 +802,6 @@ input[type="email"] {
   background-color: var(--btn-color1);
   color: var(--White);
 }
-.footer-content-2 {
-  margin-top: 1rem;
-  background-color: var(--btn-color2);
-  display: flex;
-  justify-content: space-between;
-}
-.copyright,
-.terms {
-  color: var(--White);
-  padding: 2rem 3rem;
-}
-.terms {
-  display: flex;
-}
-.terms a {
-  color: var(--White);
-  padding-left: 1rem;
-}
 .social-icons {
   display: flex;
   justify-content: center;
@@ -823,5 +811,23 @@ input[type="email"] {
   padding-left: 1.5rem;
   font-size: 1.2rem;
   color: var(--btn-color1);
+}
+.footer-content-2 {
+  margin-top: 1rem;
+  background-color: var(--btn-color2);
+  display: flex;
+  justify-content: space-between;
+}
+.copyright,
+.terms {
+  color: var(--White);
+  padding: 1rem 3rem;
+}
+.terms {
+  display: flex;
+}
+.terms a {
+  color: var(--White);
+  padding-left: 1rem;
 }
 /* End of Footer Styles */

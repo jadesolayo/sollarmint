@@ -76,6 +76,7 @@ main {
     url("/images/rm218batch5-katie-18\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   color: var(--White);
 }
 
@@ -765,7 +766,7 @@ footer {
   width: 100%;
   display: flex;
 }
-.footer-links-2{
+.footer-links-2 {
   margin-left: 1rem;
 }
 .marketplace,
@@ -774,7 +775,8 @@ footer {
 .company {
   align-self: flex-start;
 }
-.account, .company{
+.account,
+.company {
   margin-left: 5rem;
 }
 .footer-img {

@@ -247,7 +247,7 @@
 }
 @media (max-width: 670px) {
   header {
-    height: 8vh;
+    height: 6.5vh;
   }
   .landing-page-copy {
     margin-top: 1rem;

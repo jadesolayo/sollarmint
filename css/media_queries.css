@@ -45,8 +45,8 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 1050px) {
-  landing-page-img {
+@media (max-width: 1100px) {
+  .landing-page-img {
     height: 60vh;
   }
   .legend h5 {
@@ -68,9 +68,11 @@
   .nft-info {
     font-size: 0.8rem;
   }
-  .top-sellers {
+  .top-sellers,
+  .cards-section,
+  .explore-cards-section {
+    padding: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
   }
   .topseller-value {
     margin-left: 1rem;
@@ -85,6 +87,72 @@
     top: 2%;
     left: 22%;
     position: absolute;
+  }
+  .footer-content-1 {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+.footer-links-2{
+  margin-left: 0;
+}
+  .footer-img {
+    margin-left: -46rem;
+    width: 20%;
+  }
+  .marketplace,
+  .account,
+  .resources,
+  .company {
+    width: 50%;
+    margin-top: 2rem;
+    margin-inline: auto;
+  }
+  .account,
+  .company {
+    margin-left: 5rem;
+  }
+  .updates {
+    width: 100%;
+  }
+  .updates h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .update-form {
+    width: 70%;
+  }
+  .social-icons {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  #fb-icon {
+    padding-left: 0;
+  }
+  .footer-content-2 {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+
+  .copyright,
+  .terms {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    order: 1;
+  }
+  .terms {
+    order: -1;
+    justify-content: center;
   }
   .live-auction-cards {
     grid-template-columns: 1fr 1fr;
@@ -134,7 +202,9 @@
     align-items: center;
     justify-content: center;
   }
-  .cards-section {
+  .top-sellers,
+  .cards-section,
+  .explore-cards-section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
@@ -151,6 +221,24 @@
   }
   .explore-section {
     padding: 1.5rem;
+  }
+  .create-nft-cont {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .create-nft-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5rem;
+  }
+  .create-nft-content {
+    margin-left: 0;
+    margin-top: 2rem;
+    place-content: center;
+    padding: 1rem;
+    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 670px) {
@@ -249,33 +337,18 @@
   .create-nfts-section h1 {
     font-size: 1.67rem;
   }
-  .create-nft-cont {
-    margin-top: 1rem;
-    flex-direction: column;
-  }
-  .create-nft-img {
-    width: 100%;
-    margin-top: -0.5rem;
-  }
-  .create-nft-content {
-    margin-left: 0;
-    margin-top: 2rem;
-    place-content: center;
-    padding: 1rem;
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
   .footer-content-1 {
     padding: 1.5rem;
     flex-direction: column;
   }
 
-  .footer-links{
+  .footer-links {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-left: 0;
   }
+
   .footer-img {
     margin-left: -16rem;
     width: 30%;
@@ -284,9 +357,13 @@
   .account,
   .resources,
   .company {
-    width: 100%;
+    width: 50%;
     margin-top: 2rem;
     margin-inline: auto;
+  }
+  .account,
+  .company {
+    margin-left: 5rem;
   }
   .updates {
     width: 100%;
@@ -296,32 +373,32 @@
     margin-bottom: 1rem;
   }
   .update-form {
-    width: 90%;
+    width: 100%;
   }
   .social-icons {
     justify-content: flex-start;
     margin-top: 1rem;
   }
-  #fb-icon{
+  #fb-icon {
     padding-left: 0;
   }
-  .footer-content-2{
+  .footer-content-2 {
     flex-direction: column;
     padding: 1rem 1.5rem;
   }
-  .copyright, .terms{
+  .copyright,
+  .terms {
     padding: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .copyright{
+  .copyright {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
     order: 1;
   }
-  .terms{
+  .terms {
     order: -1;
     justify-content: center;
   }
-  
 }

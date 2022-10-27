@@ -267,6 +267,9 @@
     justify-content: center;
     flex-direction: column;
   }
+  .img-cont{
+    width: 100%;
+  }
   .legend-icon {
     align-items: center;
     width: 20%;

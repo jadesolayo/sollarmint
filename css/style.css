@@ -753,14 +753,26 @@ footer {
 .footer-content-1 {
   padding: 2.5rem 4rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.footer-links {
+  margin-left: 2rem;
+  width: 60%;
+  display: flex;
+}
+.footer-links-1,
+.footer-links-2 {
+  width: 100%;
+  display: flex;
 }
 .marketplace,
 .account,
 .resources,
 .company {
   align-self: flex-start;
+}
+.account, .company{
+  margin-left: 5rem;
 }
 .footer-img {
   width: 13%;
@@ -805,7 +817,7 @@ input[type="email"] {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .social-icons .fa-brands {
   padding-left: 1.5rem;

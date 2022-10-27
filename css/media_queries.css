@@ -193,7 +193,7 @@
     min-height: 100vh;
   }
   .landing-page-content {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     flex-direction: column;
     padding: 1.5rem;
   }
@@ -249,20 +249,19 @@
   header {
     height: 6.5vh;
   }
-  .landing-page-copy {
-    margin-top: 1rem;
-  }
-  .landing-page-content {
+  .img-page-content {
     padding-bottom: 5rem;
   }
   .landing-page h4 {
     font-size: 1rem;
   }
+
   .landing-page-copy h1 {
     font-size: 2rem;
   }
   .landing-page-img {
-    margin-top: 14rem;
+    height: 100%;
+    margin-top: 2rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -275,12 +274,10 @@
     font-size: 0.9rem;
   }
   .line{
-    margin-top: 30vh;
+    margin-top: 5vh;
     height: 15vh;
   }
-  .img-cont {
-    width: 100%;
-  }
+ 
   .img-cont1 {
     align-self: center;
   }

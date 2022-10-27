@@ -566,21 +566,26 @@ input[type="email"] {
 }
 .auction-tag-cont {
   display: flex;
-  width: 70%;
+  width: 60%;
+}
+.info-cont h4{
+  font-size: .9rem;
 }
 .creator {
   color: hsl(0, 2%, 40%);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .info-cont {
   padding-left: 0.5rem;
 }
 .button-cont {
-  width: 25%;
+  width: 35%;
 }
 .auction-btn {
   padding: 0.5rem 1rem;
 }
+
+
 /* Footer Styles */
 
 footer {

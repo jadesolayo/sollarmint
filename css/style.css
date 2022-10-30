@@ -397,7 +397,7 @@ input[type="email"] {
 }
 .place-bid {
   border: none;
-  width: 60%;
+  width: 70%;
   padding: 0.7rem 1.8rem;
   background-color: var(--btn-color1);
   border-radius: 5px;
@@ -420,7 +420,6 @@ input[type="email"] {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
-  margin-bottom: 1rem;
 }
 .tag-cont {
   z-index: 0;

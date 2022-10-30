@@ -105,7 +105,7 @@
     margin-left: 0;
   }
   .footer-img {
-    margin-left: -46rem;
+    align-self: flex-start;
     width: 20%;
   }
   .marketplace,
@@ -375,7 +375,6 @@
   }
 
   .footer-img {
-    margin-left: -16rem;
     width: 30%;
   }
   .marketplace,
@@ -431,8 +430,6 @@
   .exp{
     width: 45%;
   }
-  .footer-img{
-    margin-left: -25rem;
-  }
+  
 }
 

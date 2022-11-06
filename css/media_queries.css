@@ -221,9 +221,21 @@
   .live-auction-cards {
     grid-template-columns: 1fr;
   }
-  .explore-btn-cont {
-    display: none;
+  .explore-header{
+    position: relative;
   }
+  .explore-btn-cont {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    width: 30%;
+    z-index:3;
+  }
+  .btn{
+    display: block;
+    margin-top: 1rem;
+  }
+
   .explore-section {
     padding: 1.5rem;
   }
@@ -427,9 +439,6 @@
   }
 }
 @media (max-width: 570px) {
-  .exp{
-    width: 45%;
-  }
   
 }
 

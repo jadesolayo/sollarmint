@@ -601,11 +601,27 @@ input[type="email"] {
 .explore-header h2 {
   font-size: 2.4rem;
 }
+.explore-btn-cont {
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+
+.show{
+  display: flex !important;
+}
+
+.explore-btn-cont-hid{
+  display: none;
+}
 .explore-btn-cont button {
   margin-left: 1rem;
 }
 .explore-btn-cont .btn1 {
   padding: 0.7rem 1.5rem;
+}
+#harmburger{
+  display: none;
 }
 .btn-gray {
   color: var(--black);

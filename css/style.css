@@ -262,6 +262,7 @@ input[type="email"] {
   padding-left: 0.5rem;
   align-self: center;
 }
+
 .nft-content2 {
   margin-top: 0.8rem;
   display: flex;
@@ -425,7 +426,6 @@ input[type="email"] {
   z-index: 0;
   padding: 0.4rem 0.8rem 0.4rem 0.4rem;
   width: 65%;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -438,11 +438,12 @@ input[type="email"] {
   margin-left: 1rem;
 }
 .tag {
-  width: 25%;
+  position: relative;
 }
-.check {
-  top: 5%;
-  left: 18%;
+.check-holder {
+  width: 50%;
+  top: 1%;
+  left: 65%;
   position: absolute;
 }
 .top-sellers-section,
@@ -492,16 +493,16 @@ input[type="email"] {
 .topseller-info {
   display: flex;
   margin-left: 2rem;
-  position: relative;
   width: 90%;
   align-items: center;
 }
 .topseller-img {
-  width: 60%;
+  position: relative;
 }
-.check-ts {
-  top: 5%;
-  left: 18%;
+.check-ts-holder{
+  width: 50%;
+  top: 3%;
+  left: 58%;
   position: absolute;
 }
 .topseller-value {
@@ -562,9 +563,10 @@ input[type="email"] {
   position: relative;
   padding: 1.5rem;
 }
-.auction-check {
-  bottom: 28%;
-  left: 12%;
+.live-check {
+  width: 50%;
+  bottom: 1%;
+  left: 62%;
   position: absolute;
 }
 .auction-tag-cont {
